@@ -1,0 +1,34 @@
+{
+  "name": "master",
+  "version": "1.0.0",
+  "description": "project with tablet and mobile versions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustOneJance/sedona.git"
+  },
+  "author": "allay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustOneJance/sedona/issues"
+  },
+  "homepage": "https://github.com/JustOneJance/sedona#readme",
+  "dependencies": {
+    "imagemin-pngquant": "^5.1.0",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-watch": "^5.0.0"
+  }
+}
