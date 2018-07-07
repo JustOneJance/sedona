@@ -34,7 +34,7 @@ var path = {
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
-        style: 'src/style/**/*.scss',
+        style: 'src/sass/**/*.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
         svg: 'src/svg/*.svg'
