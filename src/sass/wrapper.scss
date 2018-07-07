@@ -1,0 +1,21 @@
+@import "variables";
+
+.wrapper {
+  min-width: 320px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper {
+    min-width: 1200px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #f2f2f2;
+  }
+}
+
