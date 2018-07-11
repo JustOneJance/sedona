@@ -1,8 +1,11 @@
 <!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Sedona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
 </head>
 <body>
@@ -20,15 +23,15 @@
         заслуживающий большего!</h1>
         <span class="title__text">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</span>
         <section class="container-reason">
-            <div class="reason reason--blue">
+            <div class="reason reason--blue reason--mobile">
                 <b class="reason__title">настоящий городок</b>
                 <span class="reason__text">- №1 -</span>
                 <span class="reason__text">седона не аттракцион для туристов<br>
                 там течет своя жизнь</span>
             </div>
-            <img class="img-reason">
-        </section>
-        <div class="flex-container-row">
+            <div class="reason-img reason-img--city"></div>
+</section>
+        <div class="flex-container">
             <section class="promo-section">
                 <h2 class="promo-section__title">жилье</h2>
                 <span class="promo-section__text">рекомендуем пожить в настоящем<br>
@@ -46,15 +49,15 @@
             </section>
         </div>
         <section class="container-reason">
-            <img class="img-reason">
             <div class="reason reason--blue">
                 <b class="reason__title">там есть мост дьявола</b>
                 <span class="reason__text">- №2 -</span>
                 <span class="reason__text">да, по нему можно пройти<br>
                 если вы осмелитесь, конечно</span>
             </div>
+            <div class="reason-img reason-img--bridge"></div>
         </section>
-        <div class="flex-container-row flex-container-row--grey">
+        <div class="flex-container flex-container--grey">
             <div class="reason">
                 <b class="reason__title">настоящий городок</b>
                 <span class="reason__text">- №3 -</span>
@@ -74,20 +77,24 @@
                 толпится там</span>
             </div>
         </div>
-        <div class="wrapper">
-            <b class="wrapper__slogan">заинтересовались?</b>
-            <p class="text">укажите предполагаемые даты поездки,<br>
+        <div class="wrapper-contacts">
+            <b class="wrapper-contacts__slogan">заинтересовались?</b>
+            <p class="wrapper-contacts__text">укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <a class="link-btn">найти гостиницу</a>
         </div>
-        <div class="map"></div>
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565748734!2d-111.8301580947168!3d34.854443815683744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1531253438693" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe></div>
     </main>
     <footer class="footer">
         <div class="footer__hashtag">
             <span>#visitsedona</span>
         </div>
         <section class="footer__social">
-            <a class="social social--vk" href="http://vk.com/htmlacademy"></a>
+            <a class="social social--vk" href="http://vk.com/htmlacademy">
+                <svg class="icon-vk">
+                    <use xlink:href="icons.svg#icon-twitter"></use>
+                </svg>
+            </a>
             <a class="social social--fb" href="http://www.facebook.com/htmlacademy"></a>
             <a class="social social--inst" href="#"></a>
         </section>
@@ -97,3 +104,4 @@
     </footer>
 </div>
 </body>
+</html>

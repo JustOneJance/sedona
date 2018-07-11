@@ -13,7 +13,10 @@ var pngquant = require('imagemin-pngquant');
 var watch = require('gulp-watch');
 var imagemin = require('gulp-imagemin');
 var rimraf = require('rimraf');
-
+var svgstore = require('gulp-svgstore');
+var svgmin = require('gulp-svgmin');
+var stuff = require('path');
+var inject = require('gulp-inject');
 
 var path = {
     build: {
@@ -29,7 +32,7 @@ var path = {
         style: 'src/sass/style.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
-        svg: 'src/svg/*.svg'
+        svg: 'src/img/icons/*.svg'
     },
     watch: {
         html: 'src/**/*.html',
@@ -37,7 +40,7 @@ var path = {
         style: 'src/sass/**/*.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
-        svg: 'src/svg/*.svg'
+        svg: 'src/img/icons/*.svg'
     },
     clean: './build'
 };
@@ -51,6 +54,39 @@ var config = {
     port: 9000,
     logPrefix: "Frontend_allay"
 };
+
+gulp.task('svgstores', function () {
+    return gulp
+        .src('src/img/icons/*.svg')
+        .pipe(svgmin(function (file) {
+            var prefix = stuff.basename(file.relative, stuff.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest('build'));
+});
+
+gulp.task('svgstore', function () {
+    var svgs = gulp
+        .src('src/img/icons/*.svg')
+        .pipe(svgstore({ inlineSvg: true }));
+
+    function fileContents (filePath, file) {
+        return file.contents.toString();
+    }
+
+    return gulp
+        .src('src/index.html')
+        .pipe(inject(svgs, { transform: fileContents }))
+        .pipe(gulp.dest('build'));
+});
 
 gulp.task('html:build', function () {
     gulp.src(path.src.html)

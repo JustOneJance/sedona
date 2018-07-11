@@ -1,0 +1,13 @@
+@import "../variables";
+@import "reason";
+
+.container-reason {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet) {
+  .container-reason {
+    flex-direction: row;
+  }
+}

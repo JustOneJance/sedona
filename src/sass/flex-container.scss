@@ -1,0 +1,15 @@
+@import "variables";
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  &--grey {
+    background-color: #eeeeee;
+  }
+}
+
+@media (min-width: $tablet) {
+  .flex-container {
+    flex-direction: row;
+  }
+}

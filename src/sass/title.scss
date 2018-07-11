@@ -1,0 +1,32 @@
+@import "variables";
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 70px;
+  text-transform: uppercase;
+}
+
+.title__text {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 70px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet) {
+  .title {
+    height: 50px;
+  }
+}
