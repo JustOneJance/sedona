@@ -10,4 +10,7 @@
   .container-reason {
     flex-direction: row;
   }
+  .container-reason:nth-of-type(2){
+    flex-direction: row-reverse;
+  }
 }

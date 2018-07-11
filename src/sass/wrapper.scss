@@ -13,9 +13,8 @@
 @media (min-width: 1280px) {
   .wrapper {
     min-width: 1200px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: #f2f2f2;
+    border-left: 40px solid #f2f2f2;
+    border-right: 40px solid #f2f2f2;
   }
 }
 

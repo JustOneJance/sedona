@@ -1,0 +1,99 @@
+@import "variables";
+
+.icon-twitter {
+  width: 18px;
+  height: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  fill: #ffffff;
+}
+
+.icon-fb {
+  width: 9px;
+  height: 18px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  fill: #ffffff;
+}
+
+.icon-youtube {
+  width: 20px;
+  height: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  fill: #ffffff;
+}
+
+.icon-htmlacademy {
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-house {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  width: 39px;
+  height: 37px;
+  fill: $light-blue;
+}
+
+.icon-burger {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  width: 39px;
+  height: 37px;
+  fill: $light-blue;
+}
+
+.icon-gift {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  width: 39px;
+  height: 37px;
+  fill: $light-blue;
+}
+
+
+
+@media (min-width: $tablet) {
+  .icon-house {
+    position: relative;
+    top:0;
+    left: 0;
+    width: 75px;
+    height: 72px;
+    margin-top: 60px;
+
+  }
+
+  .icon-burger {
+    position: relative;
+    top:0;
+    left: 0;
+    width: 75px;
+    height: 72px;
+    margin-top: 60px;
+  }
+
+  .icon-gift {
+    position: relative;
+    top:0;
+    left: 0;
+    width: 75px;
+    height: 72px;
+    margin-top: 60px;
+  }
+}

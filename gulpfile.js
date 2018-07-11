@@ -73,20 +73,20 @@ gulp.task('svgstores', function () {
         .pipe(gulp.dest('build'));
 });
 
-gulp.task('svgstore', function () {
-    var svgs = gulp
-        .src('src/img/icons/*.svg')
-        .pipe(svgstore({ inlineSvg: true }));
-
-    function fileContents (filePath, file) {
-        return file.contents.toString();
-    }
-
-    return gulp
-        .src('src/index.html')
-        .pipe(inject(svgs, { transform: fileContents }))
-        .pipe(gulp.dest('build'));
-});
+// gulp.task('svgstore', function () {
+//     var svgs = gulp
+//         .src('src/img/icons/*.svg')
+//         .pipe(svgstore({ inlineSvg: true }));
+//
+//     function fileContents (filePath, file) {
+//         return file.contents.toString();
+//     }
+//
+//     return gulp
+//         .src('src/index.html')
+//         .pipe(inject(svgs, { transform: fileContents }))
+//         .pipe(gulp.dest('build'));
+// });
 
 gulp.task('html:build', function () {
     gulp.src(path.src.html)
