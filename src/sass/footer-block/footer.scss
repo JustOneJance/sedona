@@ -12,3 +12,24 @@
   text-transform: uppercase;
 }
 
+.footer__social {
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background-color: #81b3d2;
+  margin: 5px;
+}
+
+.icon-vk {
+  width: 20px;
+  height: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
