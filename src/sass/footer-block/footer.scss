@@ -25,6 +25,12 @@
   height: 45px;
   background-color: $light-blue;
   margin: 5px;
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:focus {
+    background-color: #5496bd;
+  }
 }
 
 .footer__feedback {

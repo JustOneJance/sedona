@@ -33,6 +33,16 @@
   text-align: center;
   color: #ffffff;
   line-height: 55px;
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:focus {
+    background-color: #5496bd;
+    color: rgba(256, 256, 256, 0.3);
+  }
+  &:disabled {
+  background-color: #e5e5e5;
+}
 }
 
 @media (min-width: $tablet) {
