@@ -1,155 +1,158 @@
-@import "variables";
-
-.icon-twitter {
+.icon {
+  &--twitter {
   width: 18px;
   height: 14px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  fill: #ffffff;
+  fill: $white;
   &:focus {
     fill: #3b6984;
     fill-opacity: 30%;
   }
 }
 
-.icon-fb {
-  width: 9px;
-  height: 18px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  fill: #ffffff;
-  &:focus {
-    fill: #3b6984;
-    fill-opacity: 30%;
+  &--fb {
+    width: 9px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    fill: $white;
+    &:focus {
+      fill: #3b6984;
+      fill-opacity: 30%;
+    }
   }
-}
 
-.icon-youtube {
-  width: 20px;
-  height: 14px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  fill: #ffffff;
-  &:focus {
-    fill: #3b6984;
-    fill-opacity: 30%;
+  &--youtube {
+    width: 20px;
+    height: 14px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    fill: $white;
+    &:focus {
+      fill: #3b6984;
+      fill-opacity: 30%;
+    }
   }
-}
 
-.icon-htmlacademy {
-  position: absolute;
-  width: 27px;
-  height: 34px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  &:hover {
+  &--htmlacademy {
+    position: absolute;
+    width: 27px;
+    height: 34px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    &:hover {
+      fill: $light-blue;
+    }
+    &:focus {
+      fill-opacity: 30%;
+    }
+  }
+
+  &--house {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    width: 39px;
+    height: 37px;
     fill: $light-blue;
   }
-  &:focus {
-    fill-opacity: 30%;
+
+  &--burger {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    width: 39px;
+    height: 37px;
+    fill: $light-blue;
   }
-}
 
-.icon-house {
-  position: absolute;
-  left: 20px;
-  top: 30px;
-  width: 39px;
-  height: 37px;
-  fill: $light-blue;
-}
+  &--gift {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    width: 39px;
+    height: 37px;
+    fill: $light-blue;
+  }
 
-.icon-burger {
-  position: absolute;
-  left: 20px;
-  top: 30px;
-  width: 39px;
-  height: 37px;
-  fill: $light-blue;
-}
+  &--logo-mobile {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    width: 102px;
+    height: 83px;
+    transform: translate(-50%);
+  }
 
-.icon-gift {
-  position: absolute;
-  left: 20px;
-  top: 30px;
-  width: 39px;
-  height: 37px;
-  fill: $light-blue;
-}
+  &--logo-desktop {
+    display: none;
+  }
 
-.logo-mobile {
-  z-index: 2;
-  position: absolute;
-  left: 50%;
-  width: 102px;
-  height: 83px;
-  transform: translate(-50%);
-}
-
-.logo-desktop {
-  display: none;
-}
-
-.icon-menu {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  width: 23px;
-  height: 21px;
+  &--menu {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 23px;
+    height: 21px;
+  }
 }
 
 @media (min-width: $tablet) {
-  .icon-house {
-    position: relative;
-    top:0;
-    left: 0;
-    width: 75px;
-    height: 72px;
-    margin-top: 60px;
+  .icon {
+    &--house {
+      position: relative;
+      top:0;
+      left: 0;
+      width: 75px;
+      height: 72px;
+      margin-top: 60px;
+    }
 
-  }
+    &--burger {
+      position: relative;
+      top:0;
+      left: 0;
+      width: 75px;
+      height: 72px;
+      margin-top: 60px;
+    }
 
-  .icon-burger {
-    position: relative;
-    top:0;
-    left: 0;
-    width: 75px;
-    height: 72px;
-    margin-top: 60px;
-  }
+    &--gift {
+      position: relative;
+      top:0;
+      left: 0;
+      width: 75px;
+      height: 72px;
+      margin-top: 60px;
+    }
 
-  .icon-gift {
-    position: relative;
-    top:0;
-    left: 0;
-    width: 75px;
-    height: 72px;
-    margin-top: 60px;
-  }
-
-  .icon-menu {
-    display: none;
+    &--menu {
+      display: none;
+    }
   }
 }
 
 @media (min-width: $desktop) {
-  .logo-desktop {
-    z-index: 1;
-    display: block;
-    width: 188px;
-    height: 96px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-  }
-  .logo-mobile {
-    display: none;
+  .icon {
+    &--logo-desktop {
+      z-index: 1;
+      display: block;
+      width: 188px;
+      height: 96px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    &--logo-mobile {
+      display: none;
+    }
   }
 }

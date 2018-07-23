@@ -138,7 +138,7 @@ gulp.task('build', [
     'style:build',
     'fonts:build',
     'image:build',
-    'svgstores'
+
 ]);
 
 gulp.task('watch', function(){

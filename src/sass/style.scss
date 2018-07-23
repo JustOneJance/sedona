@@ -1,9 +1,13 @@
 @import "normalize";
+@import "variables";
 @import "global";
 @import "name-company";
 @import "title";
 @import "wrapper";
 @import "header";
+@import "gallery";
+@import "video";
+@import "form";
 @import "reason-block/container-reason";
 @import "flex-container";
 @import "promo-section";
@@ -11,3 +15,4 @@
 @import "footer-block/footer";
 @import "icons";
 @import "logo";
+@import "btn";

@@ -1,0 +1,20 @@
+.btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  min-height: 60px;
+  color: $white;
+  background-color: $light-blue;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet) {
+  .btn {
+    width: 50%;
+    margin: 0;
+    margin-left: 60px;
+  }
+}

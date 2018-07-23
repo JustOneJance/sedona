@@ -1,4 +1,4 @@
-.wrapper-contacts {
+.wrapper-block {
   display: flex;
   flex-direction: column;
   height: 290px;
@@ -6,7 +6,7 @@
   padding-right: 20px;
 }
 
-.wrapper-contacts__slogan {
+.wrapper-block__slogan {
   font-weight: bold;
   font-size: 21px;
   text-transform: uppercase;
@@ -15,7 +15,7 @@
   margin-bottom: 30px;
 }
 
-.wrapper-contacts__text {
+.wrapper-block__text {
   font-weight: normal;
   font-size: 14px;
   text-transform: uppercase;
@@ -31,7 +31,7 @@
   font-size: 21px;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   line-height: 55px;
   &:hover {
     background-color: #669ec0;
@@ -41,23 +41,23 @@
     color: rgba(256, 256, 256, 0.3);
   }
   &:disabled {
-  background-color: #e5e5e5;
+  background-color: #81b3d2;
 }
 }
 
 @media (min-width: $tablet) {
-  .wrapper-contacts {
+  .wrapper-block {
     height: 325px;
     padding-left: 155px;
     padding-right: 155px;
   }
-  .wrapper-contacts__slogan {
+  .wrapper-block__slogan--contacts {
     font-size: 30px;
   }
 }
 
 @media (min-width: $desktop) {
-  .wrapper-contacts {
+  .wrapper-block--contacts {
     padding-left: 370px;
     padding-right: 370px;
   }

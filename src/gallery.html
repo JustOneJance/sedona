@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>gallery-sedona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+</head>
+<body>
+<div class="wrapper">
+    <header class="main-nav">
+        <a class="main-nav__item" href="index.html">главная</a>
+        <a class="main-nav__item" href="#">фото и видео</a>
+        <div class="logo">
+            <svg class="icon icon--logo-mobile">
+                <use xlink:href="icons.svg#logo-mobile"></use>
+            </svg>
+            <svg class="icon icon--logo-desktop">
+                <use xlink:href="icons.svg#logo-desktop"></use>
+            </svg>
+            <a href="#">
+                <svg class="icon icon--menu">
+                    <use xlink:href="icons.svg#icon-menu"></use>
+                </svg>
+            </a>
+        </div>
+        <a class="main-nav__item" href="form.html">форма отзыва</a>
+        <a class="main-nav__item" href="#">html academy</a>
+    </header>
+    <main>
+        <div class="name-company">sedona</div>
+        <div class="wrapper-block">
+            <h1 class="wrapper-block__slogan">фото и видео</h1>
+            <span class="wrapper-block__text">
+                не можете решиться на путешествие из-за курса?<br>
+                фотографии помогут вам забыть о политике и экономике.
+            </span>
+        </div>
+        <div class="gallery">
+            <div class="gallery__item gallery__item--large">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/photo-1-tablet.png" >
+                    <source media="(min-width: 1280px)" srcset="img/photo-1-desktop.png">
+                    <img class="gallery__img" src="../img/photo-1-mobile.png"
+                    sizes="100vw">
+                </picture>
+                <div class="gallery__description gallery__description--large">
+                    <div class="gallery__wrapper">
+                        <h2 class="gallery__title">народные просторы</h2>
+                        <span class="gallery__autor">Автор фото: Борис</span>
+                    </div>
+                    <span class="gallery__likes">1350</span>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/photo-2-tablet.png" >
+                    <source media="(min-width: 1280px)" srcset="img/photo-2-desktop.png">
+                    <img class="gallery__img" src="../img/photo-2-mobile.png"
+                    sizes="100vw">
+                </picture>
+                <div class="gallery__description gallery__description">
+                    <div class="gallery__wrapper">
+                        <h2 class="gallery__title">местная растительность</h2>
+                        <span class="gallery__autor">Автор фото: Сергей</span>
+                    </div>
+                    <span class="gallery__likes">143</span>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/photo-3-tablet.png" >
+                    <source media="(min-width: 1280px)" srcset="img/photo-3-desktop.png">
+                    <img class="gallery__img" src="../img/photo-3-mobile.png"
+                    sizes="100vw">
+                </picture>
+                <div class="gallery__description">
+                    <div class="gallery__wrapper">
+                        <h2 class="gallery__title">дорога на север</h2>
+                        <span class="gallery__autor">Автор фото: Петр</span>
+                    </div>
+                    <span class="gallery__likes">96</span>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/photo-4-tablet.png" >
+                    <source media="(min-width: 1280px)" srcset="img/photo-4-desktop.png">
+                    <img class="gallery__img" src="../img/photo-4-mobile.png"
+                    sizes="100vw">
+                </picture>
+                <div class="gallery__description">
+                    <div class="gallery__wrapper">
+                        <h2 class="gallery__title">мост дьявола</h2>
+                        <span class="gallery__autor">Автор фото: Антон</span>
+                    </div>
+                    <span class="gallery__likes">254</span>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-block">
+            <h2 class="wrapper-block__slogan">
+                все еще сомневаетесь?
+            </h2>
+            <span class="wrapper-block__text">
+                смотрите видеопризентацию и скорее за билетами, пока<br>
+                они не подорожали в очередной раз!
+            </span>
+        </div>
+        <div class="video">
+            <video src="../dread.mp4" controls width="100%"></video>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__hashtag">
+            <span>#visitsedona</span>
+        </div>
+        <section class="footer__social">
+            <a class="social" href="http://vk.com/htmlacademy">
+                <svg class="icon icon--twitter">
+                    <use xlink:href="icons.svg#icon-twitter"></use>
+                </svg>
+            </a>
+            <a class="social" href="http://www.facebook.com/htmlacademy">
+                <svg class="icon icon--fb">
+                    <use xlink:href="icons.svg#icon-fb"></use>
+                </svg>
+            </a>
+            <a class="social" href="#">
+                <svg class="icon icon--youtube">
+                    <use xlink:href="icons.svg#icon-youtube"></use>
+                </svg>
+            </a>
+        </section>
+        <div class="footer__feedback">
+            <span >разработано</span>
+            <a class="htmlacademy-link">
+                <svg class="icon icon--htmlacademy">
+                    <use xlink:href="icons.svg#icon-htmlacademy"></use>
+                </svg>
+            </a>
+        </div>
+    </footer>
+</div>
+</body>
