@@ -26,7 +26,7 @@
   .fieldset__wrapper {
     display: flex;
     align-items: center;
-    width: 90%;
+    padding-right: 20px;
     padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -36,7 +36,7 @@
     flex-grow: 1;
     min-height: 60px;
     margin-left: 20px;
-    width: 90%;
+    width: 100%;
     background-color: #f2f2f2;
     border: none;
     padding-left: 20px;
@@ -86,6 +86,24 @@
     color: $black;
     font-size: 18px;
     margin: 10px;
+  }
+
+  .fieldset__container {
+    position: absolute;
+    width: 60px;
+    height: 62px;
+    right: 0;
+    top: 16px;
+    background-color: #e6e6e6;
+    &--email {
+      top: 94px;
+    }
+  }
+
+  .fieldset__wrapper-contacts {
+    position: relative;
+    margin-right: 20px;
+    overflow: hidden;
   }
 }
 
@@ -189,5 +207,16 @@
 
   .fieldset__contacts {
     line-height: 60px;
+  }
+
+  .fieldset__container {
+    height: 78px;
+    width: 78px;
+    top: 0;
+    left: 44%;
+    &--email {
+      left: auto;
+      right: 0;
+    }
   }
 }

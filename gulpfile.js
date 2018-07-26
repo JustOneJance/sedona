@@ -58,24 +58,13 @@ var config = {
 gulp.task('svgstores', function () {
     return gulp
         .src('src/img/icons/*.svg')
-        .pipe(svgmin(function (file) {
-            var prefix = stuff.basename(file.relative, stuff.extname(file.relative));
-            return {
-                plugins: [{
-                    cleanupIDs: {
-                        prefix: prefix + '-',
-                        minify: true
-                    }
-                }]
-            }
-        }))
         .pipe(svgstore())
         .pipe(gulp.dest('build'));
 });
 
 // gulp.task('svgstore', function () {
 //     var svgs = gulp
-//         .src('src/img/icons/*.svg')
+//         .src('build/*.svg')
 //         .pipe(svgstore({ inlineSvg: true }));
 //
 //     function fileContents (filePath, file) {
@@ -83,7 +72,7 @@ gulp.task('svgstores', function () {
 //     }
 //
 //     return gulp
-//         .src('src/index.html')
+//         .src('build/index.html')
 //         .pipe(inject(svgs, { transform: fileContents }))
 //         .pipe(gulp.dest('build'));
 // });

@@ -1,18 +1,25 @@
 .name-company {
   width: 100%;
   height: 390px;
-  background: url("../img/mobile.png") no-repeat;
+  background: url("../img/mobile-back.png") no-repeat;
   background-size: cover;
+  background-position: center, center;
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
-  text-align: center;
-  line-height: 390px;
 }
 
 @media (min-width: $tablet) {
   .name-company {
     height: 522px;
-    background: url("../img/back-desktop.png") no-repeat;
+    background: url("../img/tablet-back.png") no-repeat;
     background-size: cover;
+    background-position: center, center;
     clip-path: polygon(0% 0%, 100% 0%, 100% 461px, 80% 488px, 80% 459px, 50% 100%, 20% 459px, 20% 488px, 0% 461px);
+  }
+}
+
+@media (min-width: $desktop) {
+  .name-company {
+    background: url("../img/desktop-back.png") no-repeat;
+    background-size: cover;
   }
 }
